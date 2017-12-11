@@ -32,6 +32,8 @@ if (!empty($_POST)) {
         $datos[$i]['materia']=$m['nombre']." - ".$m['turno'];
 
     }
+    
+        
 	$titulo=array("nombres"=>"Nombres","paterno"=>"Ap. Paterno","materno"=>"Ap. Materno","ci"=>"C.I.","sexo"=>"Sexo","grado"=>"Grado","materia"=>"Materia","nombrespadre"=>"Nombres Padre","paternopadre"=>"Paterno Padre","telefono"=>"Teléfono");
 	listadoTabla($titulo,$datos,1,"modificar.php","eliminar.php","");
 }
