@@ -15,22 +15,24 @@ $_SESSION['subm']=0;
     });
 </script>
 <?php include_once("cabecera.php");?>
+
+<div class="grid_6">
+    <div class="contenido textoinicio">
+    	<h3>Misión</h3>
+    Proporcionar a los niños y niñas de formación integral para que en un futuro puedan  desarrollar sus capacidades, encontrar la confianza y  seguridad personal que necesitan para su proceso de aprendizaje.
+        <h3>Visión</h3>
+        Ayudar a todos los niños y jóvenes que presentan una dificultad en el proceso de enseñanza aprendizaje,  realizando diagnósticos, intervenciones, y brindando asesoría personalizada, de esa manera poder apoyar y lograr una asimilación de conocimientos y llegar a la formación de  buenos estudiantes.
+    </div>
+</div>
 <div class="grid_6">
     <div class="contenido">
     	<div class="theme-light">
     	<div id="slider" class="nivoSlider">
-                <img src="imagenes/inicio/home_img1.jpg" />
-                <img src="imagenes/inicio/home_img2.jpg" />
+                <img src="imagenes/inicio/foto1.jpg" />
+                <img src="imagenes/inicio/foto2.jpg" />
+                <img src="imagenes/inicio/foto3.jpg" />
 		</div>
         </div>
-    </div>
-</div>
-<div class="grid_6">
-    <div class="contenido textoinicio">
-    	<h3>Visión</h3>
-    El vídeo proporciona una manera eficaz para ayudarle a demostrar el punto. Cuando haga clic en Vídeo en línea, puede pegar el código para insertar del vídeo que desea agregar.
-También puede escribir una palabra clave para buscar en línea el vídeo que mejor se adapte a su documento.Para otorgar a su documento un aspecto profesional, Word proporciona encabezados, pies de página, páginas de portada y diseños de cuadro de texto que se complementan entre sí.
-
     </div>
 </div>
 <?php include_once("piepagina.php");?>
