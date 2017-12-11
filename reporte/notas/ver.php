@@ -11,7 +11,7 @@ class PDF extends PPDF{
 		$this->Ln();
 		$this->CuadroCabecera(30,"Grado: ",20,$nombregrado);
         $this->CuadroCabecera(30,"Materia: ",20,$nombremateria);
-		$this->Ln();
+		$this->Ln(15);
 		$this->TituloCabecera(10,"N");
 		$this->TituloCabecera(30,"Paterno");
 		$this->TituloCabecera(30,"Materno");
@@ -40,11 +40,7 @@ $where="codgrado=$codgrado and codmateria=$codmateria";
 
 $pdf=new PDF("P","mm","letter");
 $pdf->AddPage();
-$totales=array();
-$cantidadt=0;
-$preciot=0;
-$totalt=0;
-$cantidadstock=0;
+
 foreach($alumno->mostrarTodos($where,"paterno,materno,nombres") as $a){$i++;
 	
 	$calificacion->campos=array("codalumno,ROUND(AVG(puntaje)) as puntaje");
