@@ -33,13 +33,13 @@ php_start(0);
 			$this->CuadroCabecera($this->ancho-75 ,"" ,20,"");
 			$this->CuadroCabecera(12 ,"Fecha: ",20,$fecha);
 			$this->Pagina();
-			$this->ln(5);
+			$this->ln(15);
 			if(in_array("Cabecera",get_class_methods($this))){
 				$this->Cabecera();	
 			}
 			$this->ln();
 			
-			$this->Cell($this->ancho,0,"",1,1);
+			//$this->Cell($this->ancho,0,"",1,1);
 			$this->Ln(0.1);
 		}
 		function Pagina(){
