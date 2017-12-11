@@ -306,7 +306,7 @@ input[type=text]:focus,input[type=number]:focus,input.texto:focus,textarea:focus
 	outline:none;
 	border-bottom:#adb96e 1px dashed;
 }
-input[type=submit].enviar,input[type=submit]{
+input[type=submit].enviar,input[type=submit],.enviar{
 	margin-top:23px;
 
 	border: 1px solid #adb96e;
@@ -329,9 +329,10 @@ background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
 border-radius:3px;
 	display:inline-block;
 }
-input[type=submit].enviar:hover,input[type=submit]:hover{
+input[type=submit].enviar:hover,input[type=submit]:hover,.enviar:hover{
 
-background-color:#8A9749
+background-color:#8A9749;
+    text-decoration:none;
 }
 input[readonly]{
 	background-color:#EFEFEF;
@@ -339,7 +340,7 @@ input[readonly]{
 	cursor:no-drop	
 }
 h3{
-	color: #0B5ED7;
+	color: seagreen;
 	font-size: 20px;
 	margin: 0;
 	padding: 0 0 15px 0;	
@@ -347,7 +348,8 @@ h3{
 }
 .textoinicio{
 	color:#252f47;
-	line-height: 22px;	
+	line-height: 22px;
+    text-align: justify;
 }
 /*Fin de estilo de formulario*/
 a,a.enlace{
@@ -637,3 +639,28 @@ small{
 	font-size:11px;
 }
 /*Fin de Texto*/
+.celda{
+    border: #D9D9D9 solid 1px;
+}
+.celda h4{
+    background-color: #5D9778;
+    color:#FFF;
+    text-align: center;
+    padding: 10px;
+
+}
+.naranja{
+    background-color: #E79A2A !important;    
+}
+.rojo{
+    background-color: #CB5052 !important;    
+
+}
+.azul{
+    background-color: #5788C3 !important;
+}
+.celda label{
+    margin-left: 170px;
+    text-align: left;
+    padding-bottom: 10px;
+}
