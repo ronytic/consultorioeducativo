@@ -5,9 +5,11 @@ $narchivo="usuarios";
 include_once("../class/".$narchivo.".php");
 ${$narchivo}=new $narchivo;
 extract($_POST);
-if($_FILES['foto']['name']!=""){
+/*if($_FILES['foto']['name']!=""){
 	@copy($_FILES['foto']['tmp_name'],"../../imagenes/usuarios/".$_FILES['foto']['name']);	
-}
+}*/
+
+
 $valores=array("usuario"=>"'$usuario'",
 			"password"=>"MD5('$password')",
 			"nombre"=>"'$nombres'",
@@ -19,10 +21,19 @@ $valores=array("usuario"=>"'$usuario'",
 			"telefono"=>"'$telefono'",
 			"email"=>"'$email'",
 			"celular"=>"'$celular'",
-			"cargo"=>"'$cargo'",
-			"foto"=>"'".$_FILES['foto']['name']."'",
-			"obs"=>"'$observacion'"
+			"lm"=>"'$lm'",
+            "mm"=>"'$mm'",
+            "xm"=>"'$xm'",
+            "jm"=>"'$jm'",
+            "vm"=>"'$vm'",
+            "lt"=>"'$lt'",
+            "mt"=>"'$mt'",
+            "xt"=>"'$xt'",
+            "jt"=>"'$jt'",
+            "vt"=>"'$vt'",
 			);
+
+
 ${$narchivo}->insertar($valores);
 $codinsercion=${$narchivo}->last_id();
 $mensaje[]="EL USUARIO SE GUARDO CORRECTAMENTE";

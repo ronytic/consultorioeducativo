@@ -15,16 +15,23 @@ $valores=array("usuario"=>"'$usuario'",
 			"direccion"=>"'$direccion'",
 			"telefono"=>"'$telefono'",
 			"celular"=>"'$celular'",
-			"cargo"=>"'$cargo'",
+			
 			"email"=>"'$email'",
 			
-			"obs"=>"'$observacion'"
+			"obs"=>"'$observacion'",
+            "lm"=>"'$lm'",
+            "mm"=>"'$mm'",
+            "xm"=>"'$xm'",
+            "jm"=>"'$jm'",
+            "vm"=>"'$vm'",
+            "lt"=>"'$lt'",
+            "mt"=>"'$mt'",
+            "xt"=>"'$xt'",
+            "jt"=>"'$jt'",
+            "vt"=>"'$vt'",
 			);
 			
-if($_FILES['imagen']['name']!=""){
-	@copy($_FILES['foto']['tmp_name'],"../../imagenes/productos/".$_FILES['foto']['name']);	
-	$valores["foto"]="'".$_FILES['foto']['name']."'";
-}			
+			
 if($password!=""){$valores=array_merge($valores,array("password"=>"MD5('$password')"));}
 ${$narchivo}->actualizar($valores,$cod);
 $codinsercion=$cod;
